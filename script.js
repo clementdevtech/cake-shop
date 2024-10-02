@@ -66,6 +66,7 @@ function loadCakes(filterCategory = null) {
 
 // Add a new user to local storage
 function adduser(username, location, phone, password) {
+ const users = JSON.parse(localStorage.getItem('users')) || [];
     alert('registeration successful please login to add more items');
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const user = {
